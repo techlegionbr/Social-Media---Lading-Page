@@ -1,12 +1,22 @@
-import { Container, ServiceContainer, Contents } from "./styles";
+import {
+  Container,
+  HeadsetsContainer,
+  HeadsetItemContainer,
+  SocialContainer,
+  HeroContent,
+} from "./styles";
 
-import logo from "../../assets/logo.png";
+//import { FiArrowDown, FiArrowRight } from 'react-icons/fi';
+
+import { FaEnvelope } from "react-icons/fa";
+
+import headImg1 from "../../assets/headset/head1.png";
 
 export function Main() {
   return (
     <Container>
       <section>
-        <Contents>
+        <HeroContent>
           <h1>
             Aumente sua presença online e impulsione seus negócios com nossa
             expertise em Social Media.
@@ -16,15 +26,21 @@ export function Main() {
             que lançarmos
           </p>
           <div>
-            <input />
-          </div>
-        </Contents>
+            <div>
+              {/*<FaEnvelope />*/}
+              <input type="text" placeholder="Coloque um email válido" />
+              <button>Enviar</button>
+            </div>
 
-        <ServiceContainer>
+            {/*FiArrowRight className="arrow-right"/>*/}
+          </div>
+        </HeroContent>
+
+        <HeadsetsContainer>
           <section>
-            <img src={logo} alt="imagem" />
+            <img src={headImg1} alt="Headset 1" />
           </section>
-        </ServiceContainer>
+        </HeadsetsContainer>
       </section>
     </Container>
   );

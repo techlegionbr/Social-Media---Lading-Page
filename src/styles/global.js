@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
       transition:.3s;
     }
     ::-webkit-scrollbar-thumb {
-      background: #0C1137;
+      background: #0061FF;
       border-radius: 10px;
     }
     ::-webkit-scrollbar-track{
@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #0C1137;
+    background: #0c1137;
     color: #fff;
   }
 
@@ -47,8 +47,8 @@ export const GlobalStyle = createGlobalStyle`
     list-style:none;
   }
 
- img {
+  img {
     width: 100%;
     max-width: 100%;
   }
-`;
+`

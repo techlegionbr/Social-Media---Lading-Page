@@ -1,22 +1,18 @@
-import { HomeContainer } from "../../styles/pages/HomeStyles";
+//import { useState } from "react";
 import { Header } from "../../components/Header";
-import { MenuMobile } from "../../components/MenuMobile";
 import { Main } from "../../components/Main";
+import { Banner } from "../../components/Banner";
+
 import { Footer } from "../../components/Footer";
-import { useState } from "react";
+import { HomeContainer } from "../../styles/pages/HomeStyles";
 
 export function Home() {
-  const [menuIsVisible, setMenuIsVisible] = useState(false);
-
   return (
     <>
-      <MenuMobile
-        menuIsVisible={menuIsVisible}
-        setMenuIsVisible={setMenuIsVisible}
-      />
       <HomeContainer>
-        <Header setMenuIsVisible={setMenuIsVisible} />
+        <Header />
         <Main />
+        <Banner />
         <Footer />
       </HomeContainer>
     </>

@@ -11,21 +11,40 @@ export const Container = styled.section`
   > section {
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 1rem;
+    font-size: 15px;
     color: #000;
+    padding: 24px 70px;
   }
 
-  h2 {
-    font-size: 30px;
+  h3 {
     color: #0061ff;
   }
 
-  p {
-    font-size: 20px;
-  }
+  > div {
+    > div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 16px;
 
-  .arrow-down {
-    display: none;
+      > img {
+        width: 100px;
+        height: 100px;
+        left: 160px;
+        top: 16px;
+
+        @media (max-width: 500px) {
+          width: 120px;
+        }
+      }
+
+      h2 {
+        font-size: 25px;
+
+        color: #0061ff;
+      }
+    }
   }
 
   @media (max-width: 1250px) {
@@ -42,7 +61,7 @@ export const Container = styled.section`
       align-items: center;
 
       p {
-        max-width: 280px;
+        max-width: 80px;
         text-align: center;
       }
 
