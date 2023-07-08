@@ -40,9 +40,10 @@ export const Container = styled.section`
       }
 
       h2 {
-        font-size: 25px;
-
+        font-size: 30px;
         color: #0061ff;
+        margin-top: 10px;
+        padding-bottom: 2px;
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Container, ProductContainer } from "./styles";
+import { Container } from "./styles";
 
 import logoImg from "../../assets/logoImg.svg";
 
