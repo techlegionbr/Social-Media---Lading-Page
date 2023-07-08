@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-import headImg1 from "../../assets/headset/head1.png";
+import Saly from "../../assets/Saly.png";
 
 export function Banner() {
   return (
@@ -15,11 +15,11 @@ export function Banner() {
             <p> Quero impulsionar meu negócio</p>
           </div>
 
-          {/*<div>
+          <div>
             <section>
-            <img src={headImg1} alt="Headset 1" />
+              <img src={Saly} alt="" />
             </section>
-          </div>*/}
+          </div>
         </div>
       </section>
     </Container>
